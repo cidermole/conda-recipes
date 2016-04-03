@@ -1,0 +1,28 @@
+package:
+  name: moses-scripts
+  version: 3.0.1
+
+# TODO: we should somehow avoid git submodules (esp. the ~300 MB moses-regtests)
+source:
+  git_url: https://github.com/moses-smt/mosesdecoder
+  git_rev: 24cf88061fd9b7f192b3e82e550842055baa4511
+# moses does not have (recent) release versions. Take March 30 version for now.
+#
+# potential tags in moses:
+# * RELEASE-3.0
+# * SCRIPTS-RELEASE-20060731-2118
+# * mmt-mvp-v0.12.1
+
+# probably, perl should be in requirements? But then, everybody has that already, no need to install perl with conda.
+
+# requirements:
+  # build:
+  # run:
+
+build:
+  number: 0
+
+about:
+  home: http://www.statmt.org/moses/
+  license: LGPLv2.1
+  summary: "moses statistical machine translation system - scripts-only release"
